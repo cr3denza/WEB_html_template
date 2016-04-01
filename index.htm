@@ -9,10 +9,14 @@
   <title>html test</title>
 </head>
 <body>
-  hello??
-this is third
-for Angular TEST
-
-
+  <div ng-app="myApp" ng-controller="myCtrl">
+    <input ng-model="value"><br>
+    <h1>{{value}}</h1>
+  </div>
+  <script>
+var app = angular.module('myApp',[]).controller('myCtrl',function($scope){
+  $scope.value = "hello??\nthis si tese";
+});
+  </script>
 </body>
 </html>
